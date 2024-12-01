@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+    background-color:#CFECEC;
+    }
+    .card {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    }
+    .card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transform: translateY(-5px);
+    }
+</style>
+<body>
+   <div class="container my-4">
+       <div class="card shadow bg-primary text-white">
+           <div class="card-body">
+               <a href="{{ url_for('movie') }}" class="btn btn-primary">MOVIES</a>
+               <p class="card-text">Movies are visual stories told through moving images and sound, designed to entertain, inform, or inspire.</p>
+           </div>
+   </div>
+   </div>
+   <div class="container my-4">
+       <div class="card shadow">
+           <div class="card-body bg-success text-white">
+               <a href="{{ url_for('comedy') }}" class="btn btn-success">COMEDY</a>
+               <p class="card-text">Comedy is a genre of entertainment that uses humour to amuse and entertain audiences.</p>
+           </div>
+   </div>
+   </div>
+   <div class="container my-4">
+       <div class="card shadow bg-info text-black">
+           <div class="card-body">
+               <a href="{{ url_for('song') }}" class="btn btn-info">SONGS</a>
+               <p class="card-text">Songs are musical compositions that combine melodies, lyrics, and rhythms to express emotions, tell stories, or convey messages.</p>
+           </div>
+   </div>
+   </div>
+   <div class="container my-4">
+       <div class="card shadow bg-danger text-black">
+           <div class="card-body">
+               <a href="{{ url_for('webseries') }}" class="btn btn-danger">WEB SERIES</a>
+               <p class="card-text">A web series is a series of scripted or non-scripted videos released online, often in episodic form, typically designed for streaming platforms.</p>
+           </div>
+   </div>
+   </div>
+   <div class="container my-4">
+       <div class="card shadow bg-secondary text-white">
+           <div class="card-body">
+               <a href="{{ url_for('cartoon') }}" class="btn btn-secondary">CARTOONS</a>
+               <p class="card-text">Cartoons are animated visual content, often humorous, created for entertainment, typically targeting children or family audiences.</p>
+           </div>
+   </div>
+   </div>
+   <div class="container my-4">
+       <div class="card shadow bg-dark text-white">
+           <div class="card-body">
+               <a href="{{ url_for('sports') }}" class="btn btn-dark">SPORTS</a>
+               <p class="card-text">Sports are competitive physical activities or games that aim to improve skills, provide entertainment, and promote physical fitness.</p>
+           </div>
+   </div>
+   </div>
+           <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
